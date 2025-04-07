@@ -80,9 +80,7 @@ class website_data_parser:
 
     def check_element_presence(self, name, xpath) -> WebElement:
         try:
-            elem = self.web_driver_wait.until(
-                EC.presence_of_element_located((By.XPATH, xpath))
-            )
+            elem = self.find_simple_element_with_xpath(name, xpath)
             print(f'ℹ️  {name}: Web элемент найден на экране')
 
             return elem

@@ -26,7 +26,7 @@ class JSON_service:
 
             dumped = json.dumps(results, indent=4, ensure_ascii=False)
 
-            with open(file_path, 'w') as outfile:
+            with open(file_path, 'w', encoding='utf-8') as outfile:
                 outfile.write(dumped)
 
             print('🟢 Успешно сохранили результаты.')
