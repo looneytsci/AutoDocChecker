@@ -8,7 +8,7 @@ class JSON_service:
         self.output_json_path = output_json_path
 
     def get_input_targets(self) -> list[target]:
-        with open(self.input_json_path, 'r') as openfile:
+        with open(self.input_json_path, 'r', encoding='utf-8') as openfile:
             items = json.load(openfile)
             targets = []
 

@@ -1,0 +1,22 @@
+# Игнорируем временные и системные файлы
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store
+.idea/
+.vscode/
+*.code-workspace
+
+# Игнорируем кэш Python и скомпилированные файлы
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Игнорируем input/output
+input.json
+output/
